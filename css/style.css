@@ -1,0 +1,962 @@
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto", serif ! important;
+  overflow-x: hidden;
+}
+
+.main-content {
+  padding-top: 5.9rem;
+}
+
+.top-item {
+  margin-top: 100px;
+}
+
+#signout-btn {
+  text-align: right !important;
+  position: absolute;
+  top: 20px;
+  left: 0;
+  right: 30px;
+}
+
+ol,
+ul {
+  padding-left: 15px ! important;
+}
+
+label {
+  display: inline-block;
+  z-index: 99 ! important;
+}
+
+header {
+  margin: 0;
+  width: 100%;
+  background-color: #5b5b5b;
+  position: fixed;
+  z-index: 20;
+}
+
+nav {
+  height: 100%;
+  position: fixed;
+  left: 0;
+  width: 221px;
+  margin-top: 80px;
+  /*transform: translateX(-320px);*/
+  transform: translateX(-20px);
+  transition: transform 260ms ease-in-out;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+}
+
+nav ul>li {
+  list-style: none;
+  color: #333;
+  text-transform: capitalize;
+  padding: 10px;
+  cursor: pointer;
+  border-bottom: none;
+  transition: .25s;
+  font-size: 15px;
+}
+
+nav ul>li span {
+  display: block;
+  font-size: 14px;
+  color: #353535;
+}
+
+a.nav-link {
+  color: #333;
+}
+
+a.nav-link:hover {
+  color: #a35858;
+}
+
+nav ul>li a {
+  color: #333;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+nav ul>li:hover {
+  background-color: #dddddd;
+}
+
+nav li#nav-signup {
+  list-style: none;
+  background-color: #00B2D3;
+}
+
+nav ul>li#nav-signup span {
+  color: #00B2D3;
+}
+
+nav ul>li#nav-signup a {
+  color: #ffffff;
+}
+
+nav ul>li#nav-signup:hover {
+  background-color: #006375;
+}
+
+input[type="checkbox"]:checked~nav {
+  transform: translateX(0);
+  z-index: 40;
+}
+
+input[type=checkbox] {
+  box-sizing: border-box;
+  display: none;
+  transition: all 0.25s;
+}
+
+.menuIconToggle {
+  box-sizing: border-box;
+  cursor: pointer;
+  position: fixed;
+  z-index: 40;
+  height: 100%;
+  width: 100%;
+  top: 110px;
+  left: 30px;
+  height: 22px;
+  width: 22px;
+  transition: all 0.3s;
+}
+
+.hamb-line {
+  box-sizing: border-box;
+  position: absolute;
+  height: 3px;
+  width: 100%;
+  background-color: #444;
+  transition: all 0.25s;
+}
+
+.hor {
+  transition: all 0.3s;
+  box-sizing: border-box;
+  position: relative;
+  float: left;
+  margin-top: 3px;
+}
+
+.dia.part-1 {
+  position: relative;
+  box-sizing: border-box;
+  float: left;
+  transition: all .25s;
+}
+
+.dia.part-2 {
+  box-sizing: border-box;
+  position: relative;
+  float: left;
+  margin-top: 3px;
+  transition: all .25s;
+}
+
+input[type=checkbox]:checked~.menuIconToggle>.hor {
+  box-sizing: border-box;
+  opacity: 0;
+  transition: all .25s;
+}
+
+input[type=checkbox]:checked~.menuIconToggle>.dia.part-1 {
+  box-sizing: border-box;
+  transform: rotate(135deg);
+  margin-top: 8px;
+  transition: all .25s;
+}
+
+input[type=checkbox]:checked~.menuIconToggle>.dia.part-2 {
+  box-sizing: border-box;
+  transform: rotate(-135deg);
+  margin-top: -9px;
+  transition: all .25s;
+}
+
+@media screen and (max-width: 640px) {
+  nav {
+    height: 100%;
+    width: 100%;
+    transform: translateX(100%);
+  }
+}
+
+
+body {
+  background: #fff;
+}
+
+.boxes {
+  min-height: 245px;
+}
+
+.card {
+  --bs-border-radius: 0.75rem ! important;
+  border-radius: 0.75rem ! important;
+}
+
+#sidebar ul li a:hover {
+  color: #a35858;
+}
+
+ul.head-right li {
+  list-style: none;
+  display: inline-flex;
+  padding-left: 20px;
+}
+
+ul.head-right {
+  text-align: end;
+  color: #fff;
+  padding-top: 25px;
+  padding-right: 6rem;
+}
+
+li.dropdown ul {
+  display: none;
+}
+
+#sign-out {
+  color: #333 !important;
+}
+
+.dropdown.text-end.dropdown-usrn a {
+  color: #fff ! important;
+}
+
+.left-side .dropdown {
+  list-style: none;
+  cursor: pointer;
+  padding: 20px 20px 10px 20px;
+}
+
+.sub-list {
+  list-style: none;
+  cursor: pointer;
+}
+
+.sub-list li a {
+  color: #a35858 ! important;
+  text-decoration: none;
+}
+
+.left-side .dropdown:hover {
+  color: #a35858;
+}
+
+ul.sub-list li {
+  margin-top: 5px;
+  margin-left: 0px;
+  font-size: 15px;
+}
+
+
+.dropdown-item.active,
+.dropdown-item:active {
+  color: var(--bs-dropdown-link-active-color);
+  text-decoration: none;
+  background-color: transparent ! important;
+}
+
+.bg-gray {
+  background: #5b5b5b;
+}
+
+.left-side {
+  background: #dbdbdb;
+  padding-top: 3rem;
+  height: 700px;
+}
+
+ul.nav.left-side {
+  flex-wrap: wrap;
+  display: block;
+}
+
+.logo-wrap {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 185px;
+  background: #5b5b5b;
+  margin-top: 20px;
+}
+
+.logo-wrap .logo {
+  width: 100%;
+  max-width: 145px;
+}
+
+.has-search-right {
+  position: relative;
+}
+
+.has-search-right .form-control {
+  padding-right: 2.375rem;
+  background: #dbdbdb;
+}
+
+.fa-search:before {
+  content: "\f002";
+  color: #333;
+}
+
+::placeholder {
+  color: #333 !important;
+  opacity: 1;
+  /* Firefox */
+}
+
+::-ms-input-placeholder {
+  /* Edge 12-18 */
+  color: #333;
+}
+
+.has-search-right .form-control-feedback {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2;
+  display: block;
+  width: 2.375rem;
+  height: 2.375rem;
+  line-height: 2.375rem;
+  text-align: center;
+  color: #aaa;
+}
+
+.shadow-sm {
+  box-shadow: var(--bs-box-shadow-sm) !important;
+  background: #dbdbdb ! important;
+  border: 1px solid #dbdbdb !important;
+}
+
+.current-date {
+  display: flex;
+}
+
+div#printDay {
+  padding-right: 7px;
+}
+
+.headerText {
+  font-size: 20px;
+  text-transform: uppercase;
+  margin-top: 10px;
+}
+
+.name-text {
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.news {
+  visibility: hidden;
+}
+
+
+.date-picker {
+  margin: 0px auto;
+}
+
+.date-picker {
+  width: 100%;
+  height: auto;
+  max-height: 50px;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s 0s ease-in-out;
+}
+
+.date-picker .input {
+  display: none1;
+  width: 100%;
+  height: 50px;
+  font-size: 0;
+  cursor: pointer;
+}
+
+.calendar-bg {
+  padding: 0 ! important;
+}
+
+.date-picker .input .result,
+.date-picker .input button {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.date-picker .input .result {
+  width: calc(100% - 50px);
+  height: 50px;
+  line-height: 50px;
+  font-size: 16px;
+  padding: 0 10px;
+  color: grey;
+  box-sizing: border-box;
+}
+
+.date-picker .input button {
+  width: 50px;
+  height: 50px;
+  background-color: #8392A7;
+  color: white;
+  line-height: 50px;
+  border: 0;
+  font-size: 18px;
+  padding: 0;
+}
+
+.date-picker .input button:hover {
+  background-color: #68768A;
+}
+
+.date-picker .input button:focus {
+  outline: 0;
+}
+
+.date-picker .calendar {
+  position: relative;
+  width: 100%;
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  background: url(../images/bg.png)no-repeat;
+
+}
+
+.date-picker .ui-datepicker-inline {
+  position: relative;
+  width: 100%;
+}
+
+.date-picker .ui-datepicker-header {
+  height: 100%;
+  line-height: 50px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.date-picker .ui-datepicker-prev,
+.date-picker .ui-datepicker-next {
+  width: 20px;
+  height: 20px;
+  text-indent: 9999px;
+  cursor: pointer;
+  overflow: hidden;
+  margin-top: 12px;
+}
+
+.date-picker .ui-datepicker-prev {
+  float: left;
+  margin-left: 12px;
+}
+
+.date-picker .ui-datepicker-prev:after {
+  transform: rotate(45deg);
+  margin: -138px 0px 0px 7px;
+}
+
+.date-picker .ui-datepicker-next {
+  float: right;
+  margin-right: 12px;
+}
+
+.date-picker .ui-datepicker-next:after {
+  transform: rotate(-135deg);
+  margin: -138px 0px 0px 6px;
+}
+
+.date-picker .ui-datepicker-prev:after,
+.date-picker .ui-datepicker-next:after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 4px;
+  height: 4px;
+  border-left: 2px solid #fff;
+  border-bottom: 2px solid #fff;
+}
+
+.date-picker .ui-datepicker-prev:hover,
+.date-picker .ui-datepicker-next:hover,
+.date-picker .ui-datepicker-prev:hover:after,
+.date-picker .ui-datepicker-next:hover:after {
+  border-color: #333;
+}
+
+.date-picker .ui-datepicker-title {
+  text-align: center;
+}
+
+.date-picker .ui-datepicker-calendar {
+  width: 100%;
+  text-align: center;
+}
+
+.date-picker .ui-datepicker-calendar thead tr th span {
+  display: block;
+  width: 100%;
+  color: #333;
+  margin-bottom: 5px;
+  font-size: 13px;
+}
+
+.date-picker .ui-state-default {
+  display: block;
+  text-decoration: none;
+  color: #5c5454;
+  line-height: 30px;
+  font-size: 12px;
+}
+
+.date-picker .ui-state-default:hover {
+  background: rgba(0, 0, 0, 0.02);
+}
+
+.date-picker .ui-state-highlight {
+  color: #68768A;
+}
+
+.date-picker .ui-state-active {
+  color: #68768A;
+  background-color: rgba(131, 146, 167, 0.12);
+  font-weight: 600;
+}
+
+.date-picker .ui-datepicker-unselectable .ui-state-default {
+  color: #eee;
+  border: 2px solid transparent;
+}
+
+.date-picker.open {
+  max-height: 400px;
+}
+
+.date-picker.open .input button {
+  background: #68768A;
+}
+
+.input {
+  display: none;
+}
+
+
+/*-------progress --------*/
+.progressbar {
+  width: 170px;
+  height: 170px;
+  line-height: 170px;
+  background: none;
+  margin: 0 auto;
+  box-shadow: none;
+  position: relative;
+}
+
+.progressbar:after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: 7px solid #5b5b5b;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.progressbar>span {
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  z-index: 1;
+}
+
+.progressbar .progress-left {
+  left: 0;
+}
+
+.progressbar .progress-bar {
+  width: 100%;
+  height: 100%;
+  background: none;
+  border-width: 7px;
+  border-style: solid;
+  position: absolute;
+  top: 0;
+  border-color: #dbdbdb;
+}
+
+.progressbar .progress-left .progress-bar {
+  left: 100%;
+  border-top-right-radius: 100px;
+  border-bottom-right-radius: 100px;
+  border-left: 0;
+  -webkit-transform-origin: center left;
+  transform-origin: center left;
+}
+
+.progressbar .progress-right {
+  right: 0;
+}
+
+.progressbar .progress-right .progress-bar {
+  left: -100%;
+  border-top-left-radius: 100px;
+  border-bottom-left-radius: 100px;
+  border-right: 0;
+  -webkit-transform-origin: center right;
+  transform-origin: center right;
+}
+
+.progressbar .progress-value {
+  display: flex;
+  border-radius: 50%;
+  font-size: 36px;
+  text-align: center;
+  line-height: 20px;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  font-weight: 300;
+}
+
+.progressbar .progress-value div {
+  margin-top: 10px;
+}
+
+.progressbar .progress-value span {
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+/* This for loop creates the  necessary css animation names 
+Due to the split circle of progress-left and progress right, we must use the animations on each side. 
+*/
+.progressbar[data-percentage="10"] .progress-right .progress-bar {
+  animation: loading-1 1.5s linear forwards;
+}
+
+.progressbar[data-percentage="10"] .progress-left .progress-bar {
+  animation: 0;
+}
+
+.progressbar[data-percentage="20"] .progress-right .progress-bar {
+  animation: loading-2 1.5s linear forwards;
+}
+
+.progressbar[data-percentage="20"] .progress-left .progress-bar {
+  animation: 0;
+}
+
+.progressbar[data-percentage="30"] .progress-right .progress-bar {
+  animation: loading-3 1.5s linear forwards;
+}
+
+.progressbar[data-percentage="30"] .progress-left .progress-bar {
+  animation: 0;
+}
+
+.progressbar[data-percentage="40"] .progress-right .progress-bar {
+  animation: loading-4 1.5s linear forwards;
+}
+
+.progressbar[data-percentage="40"] .progress-left .progress-bar {
+  animation: 0;
+}
+
+.progressbar[data-percentage="50"] .progress-right .progress-bar {
+  animation: loading-5 1.5s linear forwards;
+}
+
+.progressbar[data-percentage="50"] .progress-left .progress-bar {
+  animation: 0;
+}
+
+.progressbar[data-percentage="60"] .progress-right .progress-bar {
+  animation: loading-5 1.5s linear forwards;
+}
+
+.progressbar[data-percentage="60"] .progress-left .progress-bar {
+  animation: loading-1 1.5s linear forwards 1.5s;
+}
+
+.progressbar[data-percentage="70"] .progress-right .progress-bar {
+  animation: loading-5 1.5s linear forwards;
+}
+
+.progressbar[data-percentage="70"] .progress-left .progress-bar {
+  animation: loading-2 1.5s linear forwards 1.5s;
+}
+
+.progressbar[data-percentage="80"] .progress-right .progress-bar {
+  animation: loading-5 1.5s linear forwards;
+}
+
+.progressbar[data-percentage="80"] .progress-left .progress-bar {
+  animation: loading-3 1.5s linear forwards 1.5s;
+}
+
+.progressbar[data-percentage="90"] .progress-right .progress-bar {
+  animation: loading-5 1.5s linear forwards;
+}
+
+.progressbar[data-percentage="90"] .progress-left .progress-bar {
+  animation: loading-4 1.5s linear forwards 1.5s;
+}
+
+.progressbar[data-percentage="100"] .progress-right .progress-bar {
+  animation: loading-5 1.5s linear forwards;
+}
+
+.progressbar[data-percentage="100"] .progress-left .progress-bar {
+  animation: loading-5 1.5s linear forwards 1.5s;
+}
+
+@keyframes loading-1 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(36);
+    transform: rotate(36deg);
+  }
+}
+
+@keyframes loading-2 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(72);
+    transform: rotate(72deg);
+  }
+}
+
+@keyframes loading-3 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(108);
+    transform: rotate(108deg);
+  }
+}
+
+@keyframes loading-4 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(144);
+    transform: rotate(144deg);
+  }
+}
+
+@keyframes loading-5 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(180);
+    transform: rotate(180deg);
+  }
+}
+
+.progressbar {
+  margin-bottom: 1em;
+}
+
+
+a {
+  color: #37A39E;
+}
+
+a.btn.btn-primary {
+  background: #37A39E;
+  border-color: #37A39E;
+}
+
+a.btn.btn-primary:hover {
+  background: #339893;
+}
+
+a.h-primary-outline {
+  color: initial;
+}
+
+a.h-primary-outline:hover>.card {
+  border-color: #37A39E;
+}
+
+.card {
+  border-color: rgba(58, 58, 58, 0.15);
+}
+
+.dropdown-usrn {
+  margin-top: 0.25rem;
+}
+
+#sidebar-toggle {
+  display: none;
+}
+
+.margin-4 {
+  margin-top: 1.7rem !important;
+  z-index: 996;
+}
+
+#sidebar {
+  background: #dbdbdb;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 100;
+  padding: 20px 0 0;
+}
+
+#sidebar svg {
+  max-width: 20px;
+  margin-right: 2px;
+  stroke: #a0a0a0;
+}
+
+#sidebar ul li a {
+  color: #333;
+  border-left: 3px solid transparent;
+  padding-top: 0.7rem;
+  padding-bottom: 0.7rem;
+}
+
+#sidebar ul li a.active {
+  border-left: 3px solid #6FD1CD;
+}
+
+
+table tbody tr td {
+  vertical-align: middle;
+}
+
+.row-stats a {
+  text-decoration: none;
+}
+
+.row-stats a svg {
+  fill: #37A39E;
+}
+
+.search-group {
+  position: relative;
+}
+
+.search-group svg {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.search-group input {
+  padding-left: 40px;
+}
+
+.page-link {
+  color: #37A39E;
+}
+
+@media (max-width: 767.98px) {
+  .dropdown-usrn {
+    display: none1;
+  }
+
+  .search-group {
+    margin: 15px 0;
+  }
+
+  .row-stats a {
+    display: block;
+  }
+
+  .mb-2-sm {
+    margin-bottom: 20px !important;
+  }
+
+  #sidebar-toggle {
+    background: #838a8b;
+    display: inline-block;
+    position: absolute;
+    left: 6px;
+    z-index: 99999;
+    top: 7px;
+    color: #fff;
+    width: auto;
+  }
+
+  .search-group {
+    margin-left: 40px;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .nav {
+    display: block ! important;
+  }
+
+  .logo-wrap {
+    display: none;
+  }
+
+  .menuIconToggle {
+    top: 34px;
+  }
+
+  .hamb-line {
+    background-color: #fff;
+  }
+
+  .text-end {
+    text-align: right !important;
+    position: absolute ! important;
+    top: 20px;
+    left: 0px;
+    right: 20px;
+  }
+
+  ul.head-right {
+    text-align: center;
+    color: #fff;
+    padding-top: 27px;
+  }
+
+  .logo-wrap .logo {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1020px) {
+  nav {
+    width: 200px ! important;
+  }
+
+}
